@@ -1,7 +1,7 @@
-let button = document.getElementById('bt');
+// let button = document.getElementById('bt');
 let input = document.getElementById('inp');
 
 
-button.onclick = function add() {
+function add() {
     input.value++;
 };
