@@ -3,5 +3,55 @@
 }
 
 #inp{
-    border-color: rgb(26, 146, 36);
+    border-color: rgb(37, 209, 51);
 }
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 201px;
+    height: 201px;
+    border: solid;
+    border-width: 5px;
+    border-color: blue;
+    
+  }
+  
+  #a1{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-color: rgb(255, 0, 157);
+    border-width: 0px 1px 1px 0px;
+  }
+  
+  #a2{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-color: rgb(255, 0, 157);
+    border-width: 0px 0px 1px 0px;
+  }
+  
+  #a3{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-color: rgb(255, 0, 157);
+    border-width: 0px 1px 0px 0px;
+  }
+  
+  #a4{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-color: rgb(255, 0, 157);
+    border-width: 0px 0px 0px 0px;
+  }
