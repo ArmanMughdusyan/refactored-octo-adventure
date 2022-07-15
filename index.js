@@ -13,6 +13,8 @@ function add() {
     div2.style.backgroundColor = getColor();
     div3.style.backgroundColor = getColor();
     div4.style.backgroundColor = getColor();
+    addElement();
+
 };
 
 function getColor() {
@@ -22,4 +24,25 @@ function getColor() {
 
 function getRandom(min, max) {
 return Math.floor(Math.random() * (max - min) + min)
+};
+function addElement() {
+  document.body.onload = addElement;
+
+  const newDiv = document.createElement('div');
+  newDiv.id = 'new';
+  const newContent = document.createTextNode('New Div!');
+
+  newDiv.appendChild(newContent);
+
+  const currentDiv = document.getElementById('new');
+
+  document.body.insertBefore(newDiv, currentDiv);
+  newDiv.style.display = 'flex';
+  newDiv.style.float = 'left';
+  newDiv.style.margin = '5px';
+  newDiv.style.border = 'solid';
+  newDiv.style.borderWidth = '3px';
+  newDiv.style.borderColor = 'red';
+  newDiv.style.width = '35px';
+  newDiv.style.height = '35px';
 };
