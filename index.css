@@ -1,57 +1,42 @@
-#bt{
-    background-Color: red;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#inp{
-    border-color: rgb(37, 209, 51);
+.parent{
+  margin: 200px auto;
+  display: flex;
+  flex-flow: row ;
+  width: 400px ;
+  height: 400px;
+  /* background: rgba(211, 211, 211, 0.867); */
+  flex-wrap: wrap;
+  text-align: center;
+  line-height: 200px;
+  justify-content: space-between;
+  
 }
-#container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 201px;
-    height: 201px;
-    border: solid;
-    border-width: 5px;
-    border-color: blue;
-    
-  }
+.child{
+  background: #db1212;
+  width: 195px;
+  height: 195px;
   
-  #a1{
-    display: flex;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    border: solid;
-    border-color: rgb(255, 0, 157);
-    border-width: 0px 1px 1px 0px;
-  }
-  
-  #a2{
-    display: flex;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    border: solid;
-    border-color: rgb(255, 0, 157);
-    border-width: 0px 0px 1px 0px;
-  }
-  
-  #a3{
-    display: flex;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    border: solid;
-    border-color: rgb(255, 0, 157);
-    border-width: 0px 1px 0px 0px;
-  }
-  
-  #a4{
-    display: flex;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    border: solid;
-    border-color: rgb(255, 0, 157);
-    border-width: 0px 0px 0px 0px;
-  }
+}
+.child:nth-child(1) {
+  background: red;
+}
+
+.child:nth-child(2) {
+  background: green;
+}
+
+.child:nth-child(3) {
+  align-self: flex-end;
+  background: blue;
+}
+
+.child:nth-child(4) {
+  align-self: flex-end;
+  background: yellow;
+}
